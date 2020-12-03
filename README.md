@@ -1,5 +1,5 @@
 # Ethereal
-A completely open source geometric modeling kernel built to take advantage of modern computing hardware and solve modern design problems.
+Is a completely open source geometric modeling kernel built to take advantage of modern computing hardware and solve modern design problems.
 
 Geometry kernels are the machines that make CAD applications work. Geometry kernels are traditionally completely single threaded, making them unable to take advantage of the multithreaded computing power of modern hardware. 
 
