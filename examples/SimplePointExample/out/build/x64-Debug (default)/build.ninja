@@ -58,10 +58,10 @@ build CMakeFiles\SimplePointExample.dir\SimplePointExample.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable SimplePointExample.exe
 
-build SimplePointExample.exe: CXX_EXECUTABLE_LINKER__SimplePointExample_Debug CMakeFiles\SimplePointExample.dir\SimplePointExample.cpp.obj
+build SimplePointExample.exe: CXX_EXECUTABLE_LINKER__SimplePointExample_Debug CMakeFiles\SimplePointExample.dir\SimplePointExample.cpp.obj | Ethereal-NOTFOUND
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = Ethereal-NOTFOUND  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\SimplePointExample.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

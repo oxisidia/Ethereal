@@ -1,14 +1,18 @@
 {
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
 	"artifacts" : 
 	[
 		{
-			"path" : "Ethereal.dll"
-		},
-		{
 			"path" : "Ethereal.lib"
-		},
-		{
-			"path" : "Ethereal.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -32,19 +36,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 26,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 21,
+				"line" : 17,
 				"parent" : 0
 			}
 		]
@@ -55,16 +59,10 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  "
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd  "
 				},
 				{
 					"fragment" : "-std:c++17"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"define" : "Ethereal_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -89,10 +87,6 @@
 			{
 				"backtrace" : 2,
 				"path" : "lib"
-			},
-			{
-				"backtrace" : 2,
-				"path" : "bin"
 			}
 		],
 		"prefix" : 
@@ -100,23 +94,8 @@
 			"path" : "Q:/Ethereal/out/install/x64-Debug (default)"
 		}
 	},
-	"link" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
-				"role" : "libraries"
-			}
-		],
-		"language" : "CXX"
-	},
 	"name" : "Ethereal",
-	"nameOnDisk" : "Ethereal.dll",
+	"nameOnDisk" : "Ethereal.lib",
 	"paths" : 
 	{
 		"build" : ".",
@@ -141,5 +120,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "STATIC_LIBRARY"
 }

@@ -3,7 +3,7 @@
 
 #include "SimplePointExample.h"
 
-//#include <Ethereal_Export.h>
+//#include "../../out/build/x64-Debug (default)/Ethereal.h"
 
 using namespace std;
 
@@ -11,7 +11,7 @@ int main()
 {
 	cout << "Hello simple point example." << endl;
 
-	//Hello();
+	//Test::Hello();
 
 	return 0;
 }
