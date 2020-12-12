@@ -23,7 +23,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "q:/Ethereal/out/build/x64-Debug (default)"
+			"value" : "q:/Ethereal/examples/SimplePointExample/out/build/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -499,7 +499,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Q:/Ethereal"
+			"value" : "Q:/Ethereal/examples/SimplePointExample"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "Q:/Ethereal/out/install/x64-Debug (default)"
+			"value" : "Q:/Ethereal/examples/SimplePointExample/out/install/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -695,7 +695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Ethereal"
+			"value" : "SimplePointExample"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -1026,31 +1026,43 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "COMPILER_HAS_DEPRECATED",
+			"name" : "Etheral",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Test COMPILER_HAS_DEPRECATED"
+					"value" : "Path to a library."
 				}
 			],
-			"type" : "INTERNAL",
-			"value" : "1"
+			"type" : "FILEPATH",
+			"value" : "Etheral-NOTFOUND"
 		},
 		{
-			"name" : "COMPILER_HAS_DEPRECATED_ATTR",
+			"name" : "Ethereal",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Test COMPILER_HAS_DEPRECATED_ATTR"
+					"value" : "Path to a library."
 				}
 			],
-			"type" : "INTERNAL",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "Ethereal-NOTFOUND"
 		},
 		{
-			"name" : "Ethereal_BINARY_DIR",
+			"name" : "Ethereal_Lib",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "Ethereal_Lib-NOTFOUND"
+		},
+		{
+			"name" : "SimplePointExample_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1059,10 +1071,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Q:/Ethereal/out/build/x64-Debug (default)"
+			"value" : "Q:/Ethereal/examples/SimplePointExample/out/build/x64-Debug (default)"
 		},
 		{
-			"name" : "Ethereal_SOURCE_DIR",
+			"name" : "SimplePointExample_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1071,7 +1083,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Q:/Ethereal"
+			"value" : "Q:/Ethereal/examples/SimplePointExample"
 		}
 	],
 	"kind" : "cache",

@@ -8,7 +8,7 @@
 					"build" : ".",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.8"
+						"string" : "3.17"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -26,7 +26,7 @@
 					[
 						0
 					],
-					"name" : "Ethereal",
+					"name" : "SimplePointExample",
 					"targetIndexes" : 
 					[
 						0
@@ -37,9 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Ethereal::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Ethereal-Debug-285eb9cae0d36b20f38f.json",
-					"name" : "Ethereal",
+					"id" : "SimplePointExample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SimplePointExample-Debug-b222401f8e776e407c21.json",
+					"name" : "SimplePointExample",
 					"projectIndex" : 0
 				}
 			]
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "Q:/Ethereal/out/build/x64-Debug (default)",
-		"source" : "Q:/Ethereal"
+		"build" : "Q:/Ethereal/examples/SimplePointExample/out/build/x64-Debug (default)",
+		"source" : "Q:/Ethereal/examples/SimplePointExample"
 	},
 	"version" : 
 	{

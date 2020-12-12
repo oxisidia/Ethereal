@@ -1,18 +1,18 @@
 
-#ifndef Ethereal_EXPORT_H
-#define Ethereal_EXPORT_H
+#ifndef PROJECT_NAME_EXPORT_H
+#define PROJECT_NAME_EXPORT_H
 
-#ifdef Ethereal_BUILT_AS_STATIC
-#  define Ethereal_EXPORT
+#ifdef PROJECT_NAME_BUILT_AS_STATIC
+#  define PROJECT_NAME_EXPORT
 #  define ETHEREAL_NO_EXPORT
 #else
-#  ifndef Ethereal_EXPORT
+#  ifndef PROJECT_NAME_EXPORT
 #    ifdef Ethereal_EXPORTS
         /* We are building this library */
-#      define Ethereal_EXPORT __declspec(dllexport)
+#      define PROJECT_NAME_EXPORT __declspec(dllexport)
 #    else
         /* We are using this library */
-#      define Ethereal_EXPORT __declspec(dllimport)
+#      define PROJECT_NAME_EXPORT __declspec(dllimport)
 #    endif
 #  endif
 
@@ -26,7 +26,7 @@
 #endif
 
 #ifndef ETHEREAL_DEPRECATED_EXPORT
-#  define ETHEREAL_DEPRECATED_EXPORT Ethereal_EXPORT ETHEREAL_DEPRECATED
+#  define ETHEREAL_DEPRECATED_EXPORT PROJECT_NAME_EXPORT ETHEREAL_DEPRECATED
 #endif
 
 #ifndef ETHEREAL_DEPRECATED_NO_EXPORT
@@ -39,4 +39,4 @@
 #  endif
 #endif
 
-#endif /* Ethereal_EXPORT_H */
+#endif /* PROJECT_NAME_EXPORT_H */

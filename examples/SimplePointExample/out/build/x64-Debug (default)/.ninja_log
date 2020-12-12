@@ -1,0 +1,27 @@
+# ninja log v5
+0	638	629275807	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	63277e8661104684
+638	971	629275807	SimplePointExample.exe	4ba6b25ee9a35ce7
+0	11	0	clean	9992afb1f91dc381
+1	639	629275879	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	63277e8661104684
+640	811	629275879	SimplePointExample.exe	4ba6b25ee9a35ce7
+1	409	629275972	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	63277e8661104684
+410	557	629275972	SimplePointExample.exe	4ba6b25ee9a35ce7
+0	421	629276812	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	63277e8661104684
+0	606	629276995	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	63277e8661104684
+606	763	629276995	SimplePointExample.exe	4ba6b25ee9a35ce7
+0	8	0	clean	9992afb1f91dc381
+1	887	629281777	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	63277e8661104684
+887	1045	629281777	SimplePointExample.exe	4ba6b25ee9a35ce7
+1	423	629282123	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	63277e8661104684
+0	1092	629350401	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	bdce4dad1faf4ef6
+1093	1300	629350402	SimplePointExample.exe	4ba6b25ee9a35ce7
+1	10	0	clean	9992afb1f91dc381
+0	8	0	clean	9992afb1f91dc381
+0	684	629350480	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	bdce4dad1faf4ef6
+684	850	629350480	SimplePointExample.exe	4ba6b25ee9a35ce7
+0	11	0	clean	9992afb1f91dc381
+0	8	0	clean	9992afb1f91dc381
+0	676	629350543	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	bdce4dad1faf4ef6
+676	844	629350543	SimplePointExample.exe	4ba6b25ee9a35ce7
+1	468	629351039	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	bdce4dad1faf4ef6
+1	780	629352368	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	2e505979aa0b2840
