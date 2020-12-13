@@ -6,12 +6,32 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Ethereal",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Ethereal",
 					"targetIndexes" : 
 					[
 						0
@@ -22,11 +42,27 @@
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1
+					],
 					"directoryIndexes" : 
 					[
 						0
 					],
 					"name" : "SimplePointExample",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Ethereal",
+					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						0
@@ -36,9 +72,16 @@
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 1,
+					"id" : "Ethereal::@ddba6e94856f32c4ff7b",
+					"jsonFile" : "target-Ethereal-Debug-15a162b8d16dc9fb8be0.json",
+					"name" : "Ethereal",
+					"projectIndex" : 1
+				},
+				{
 					"directoryIndex" : 0,
 					"id" : "SimplePointExample::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SimplePointExample-Debug-a4e9a0a77177a61aba8a.json",
+					"jsonFile" : "target-SimplePointExample-Debug-2e1fe608d35c9cc17475.json",
 					"name" : "SimplePointExample",
 					"projectIndex" : 0
 				}

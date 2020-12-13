@@ -27,11 +27,11 @@ rule CXX_COMPILER__Ethereal_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX shared library.
 
-rule CXX_STATIC_LIBRARY_LINKER__Ethereal_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx64\x64\link.exe /lib /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_SHARED_LIBRARY_LINKER__Ethereal_Debug
+  command = cmd.exe /C "$PRE_LINK && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_dll --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /dll /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES  && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 

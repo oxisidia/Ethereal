@@ -2,10 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "SimplePointExample.exe"
+			"path" : "Ethereal/Ethereal.dll"
 		},
 		{
-			"path" : "SimplePointExample.pdb"
+			"path" : "Ethereal/Ethereal.lib"
+		},
+		{
+			"path" : "Ethereal/Ethereal.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,12 +16,12 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"target_link_libraries"
+			"add_library",
+			"install"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"Ethereal/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -28,13 +31,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
@@ -45,10 +48,16 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd  "
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd  "
 				},
 				{
 					"fragment" : "-std:c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "Ethereal_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -58,23 +67,32 @@
 			]
 		}
 	],
-	"id" : "SimplePointExample::@6890427a1f51a3e7e1df",
+	"id" : "Ethereal::@ddba6e94856f32c4ff7b",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "Q:/Ethereal/examples/SimplePointExample/out/install/x64-Debug (default)"
+		}
+	},
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
-				"role" : "flags"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "Ethereal-NOTFOUND",
-				"role" : "libraries"
 			},
 			{
 				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
@@ -83,12 +101,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "SimplePointExample",
-	"nameOnDisk" : "SimplePointExample.exe",
+	"name" : "Ethereal",
+	"nameOnDisk" : "Ethereal.dll",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "Ethereal",
+		"source" : "Ethereal"
 	},
 	"sourceGroups" : 
 	[
@@ -98,13 +116,6 @@
 			[
 				0
 			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1
-			]
 		}
 	],
 	"sources" : 
@@ -112,14 +123,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SimplePointExample.cpp",
+			"path" : "Ethereal/Ethereal.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "SimplePointExample.h",
-			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "SHARED_LIBRARY"
 }

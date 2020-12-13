@@ -121,29 +121,14 @@
 			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.17/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
-		},
-		{
-			"path" : "Config.cmake.in"
+			"path" : "Ethereal/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "Q:/Ethereal/out/build/x64-Debug (default)",
-		"source" : "Q:/Ethereal"
+		"build" : "Q:/Ethereal/examples/SimplePointExample/out/build/x64-Debug (default)",
+		"source" : "Q:/Ethereal/examples/SimplePointExample"
 	},
 	"version" : 
 	{

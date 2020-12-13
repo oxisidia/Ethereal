@@ -41,10 +41,10 @@ include rules.ninja
 #############################################
 # Order-only phony target for SimplePointExample
 
-build cmake_object_order_depends_target_SimplePointExample_Debug: phony || CMakeFiles\SimplePointExample.dir
+build cmake_object_order_depends_target_SimplePointExample_Debug: phony || cmake_object_order_depends_target_Ethereal_Debug
 
 build CMakeFiles\SimplePointExample.dir\SimplePointExample.cpp.obj: CXX_COMPILER__SimplePointExample_Debug ..\..\..\SimplePointExample.cpp || cmake_object_order_depends_target_SimplePointExample_Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd   -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   -std:c++17
   OBJECT_DIR = CMakeFiles\SimplePointExample.dir
   OBJECT_FILE_DIR = CMakeFiles\SimplePointExample.dir
   TARGET_COMPILE_PDB = CMakeFiles\SimplePointExample.dir\
@@ -58,10 +58,10 @@ build CMakeFiles\SimplePointExample.dir\SimplePointExample.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable SimplePointExample.exe
 
-build SimplePointExample.exe: CXX_EXECUTABLE_LINKER__SimplePointExample_Debug CMakeFiles\SimplePointExample.dir\SimplePointExample.cpp.obj | Ethereal-NOTFOUND
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+build SimplePointExample.exe: CXX_EXECUTABLE_LINKER__SimplePointExample_Debug CMakeFiles\SimplePointExample.dir\SimplePointExample.cpp.obj | Ethereal\Ethereal.lib || Ethereal\Ethereal.dll
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = Ethereal-NOTFOUND  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = Ethereal\Ethereal.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\SimplePointExample.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -69,6 +69,30 @@ build SimplePointExample.exe: CXX_EXECUTABLE_LINKER__SimplePointExample_Debug CM
   TARGET_FILE = SimplePointExample.exe
   TARGET_IMPLIB = SimplePointExample.lib
   TARGET_PDB = SimplePointExample.pdb
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\examples\SimplePointExample\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install\local: phony CMakeFiles\install\local.util
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\examples\SimplePointExample\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles\install.util
 
 
 #############################################
@@ -93,8 +117,114 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# Q:/Ethereal/examples/SimplePointExample/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target Ethereal
+
+
+#############################################
+# Order-only phony target for Ethereal
+
+build cmake_object_order_depends_target_Ethereal_Debug: phony || Ethereal\CMakeFiles\Ethereal.dir
+
+build Ethereal\CMakeFiles\Ethereal.dir\Ethereal.cpp.obj: CXX_COMPILER__Ethereal_Debug ..\..\..\Ethereal\Ethereal.cpp || cmake_object_order_depends_target_Ethereal_Debug
+  DEFINES = -DEthereal_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   -std:c++17
+  OBJECT_DIR = Ethereal\CMakeFiles\Ethereal.dir
+  OBJECT_FILE_DIR = Ethereal\CMakeFiles\Ethereal.dir
+  TARGET_COMPILE_PDB = Ethereal\CMakeFiles\Ethereal.dir\
+  TARGET_PDB = Ethereal\Ethereal.pdb
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target Ethereal
+
+
+#############################################
+# Link the shared library Ethereal\Ethereal.dll
+
+build Ethereal\Ethereal.dll Ethereal\Ethereal.lib: CXX_SHARED_LIBRARY_LINKER__Ethereal_Debug Ethereal\CMakeFiles\Ethereal.dir\Ethereal.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = Ethereal\CMakeFiles\Ethereal.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = Ethereal\CMakeFiles\Ethereal.dir\
+  TARGET_FILE = Ethereal\Ethereal.dll
+  TARGET_IMPLIB = Ethereal\Ethereal.lib
+  TARGET_PDB = Ethereal\Ethereal.pdb
+
+
+#############################################
+# Utility command for install/local
+
+build Ethereal\CMakeFiles\install\local.util: CUSTOM_COMMAND Ethereal\all
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\examples\SimplePointExample\out\build\x64-Debug (default)\Ethereal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Ethereal\install\local: phony Ethereal\CMakeFiles\install\local.util
+
+
+#############################################
+# Utility command for install
+
+build Ethereal\CMakeFiles\install.util: CUSTOM_COMMAND Ethereal\all
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\examples\SimplePointExample\out\build\x64-Debug (default)\Ethereal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Ethereal\install: phony Ethereal\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Ethereal\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\examples\SimplePointExample\out\build\x64-Debug (default)\Ethereal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Ethereal\edit_cache: phony Ethereal\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Ethereal\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\examples\SimplePointExample\out\build\x64-Debug (default)\Ethereal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal\examples\SimplePointExample -B"Q:\Ethereal\examples\SimplePointExample\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Ethereal\rebuild_cache: phony Ethereal\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Ethereal\list_install_components: phony
+
 # =============================================================================
 # Target aliases.
+
+build Ethereal: phony Ethereal\Ethereal.dll
+
+build Ethereal.dll: phony Ethereal\Ethereal.dll
 
 build SimplePointExample: phony SimplePointExample.exe
 
@@ -106,7 +236,14 @@ build SimplePointExample: phony SimplePointExample.exe
 #############################################
 # Folder: Q:/Ethereal/examples/SimplePointExample/out/build/x64-Debug (default)
 
-build all: phony SimplePointExample.exe
+build all: phony SimplePointExample.exe Ethereal\all
+
+# =============================================================================
+
+#############################################
+# Folder: Q:/Ethereal/examples/SimplePointExample/out/build/x64-Debug (default)/Ethereal
+
+build Ethereal\all: phony Ethereal\Ethereal.dll
 
 # =============================================================================
 # Built-in targets
@@ -115,14 +252,14 @@ build all: phony SimplePointExample.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\Ethereal\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\Ethereal\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################
