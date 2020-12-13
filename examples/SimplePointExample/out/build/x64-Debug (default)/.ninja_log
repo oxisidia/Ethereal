@@ -6,6 +6,3 @@
 0	1157	629523950	Ethereal/CMakeFiles/Ethereal.dir/Ethereal.cpp.obj	6a54cbc2cc52268b
 1157	1493	629523950	Ethereal/Ethereal.dll	4aae66ee862e41cf
 1157	1493	629523950	Ethereal/Ethereal.lib	4aae66ee862e41cf
-0	9	0	clean	9992afb1f91dc381
-1	1002	629525187	CMakeFiles/SimplePointExample.dir/SimplePointExample.cpp.obj	3f74fdc2fb51eaee
-1	363	629525245	SimplePointExample.exe	99519eae0cd6d4e4

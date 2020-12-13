@@ -1,4 +1,5 @@
-﻿# CMakeList.txt : CMake project for SimplePointExample
+﻿# CMakeList.txt : CMake project for SimplePointExample, include source and define
+# project specific logic here.
 #
 
 #Specify cmake minimum 
@@ -10,18 +11,8 @@ Set(CMAKE_CXX_STANDARD 17)
 #Specify project name.
 project (SimplePointExample)
 
-#Find the Etheral library--------------------------------------->>>
-
-#First get the examples parent directory 
-get_filename_component(Examples ${PROJECT_SOURCE_DIR} DIRECTORY)
-
-#Then get the Ethereal directory
-get_filename_component(Ethereal ${Examples} DIRECTORY)
-
-#Now add the Ethereal library.
+#Find the Etheral library.
 add_subdirectory(Ethereal)
-
-#--------------------------------------------------------------->>>
 
 #Create the executable
 add_executable(SimplePointExample SimplePointExample.cpp)
