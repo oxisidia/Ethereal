@@ -1026,6 +1026,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "EtherealLib",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "EtherealLib-NOTFOUND"
+		},
+		{
 			"name" : "Ethereal_BINARY_DIR",
 			"properties" : 
 			[

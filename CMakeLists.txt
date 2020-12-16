@@ -12,5 +12,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 #Add the library 
 add_library(Ethereal SHARED Ethereal.cpp)
 
+#Create the install targets and files.
 install(TARGETS Ethereal DESTINATION lib)
 install(FILES Ethereal.h DESTINATION include)
