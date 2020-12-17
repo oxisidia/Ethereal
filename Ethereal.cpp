@@ -21,9 +21,9 @@ bool __stdcall DllMain(HMODULE /*module*/, DWORD reason, LPVOID /*reserved*/) {
     return true;
 }
 
-void Test::Hello()
+__declspec(dllexport) void Test::Hello()
 {
     AllocConsole();
     freopen("CONOUT$", "w", stdout);
-    cout << "Hello, World!" << endl;
+    cout << "Hello, World! Hello Ethereal!" << endl;
 }

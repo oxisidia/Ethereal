@@ -2,8 +2,7 @@
 //
 
 #include "SimplePointExample.h"
-
-#include "Ethereal/Ethereal.h"
+#include "../../Ethereal.h"
 
 using namespace std;
 

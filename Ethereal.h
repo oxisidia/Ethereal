@@ -9,5 +9,5 @@
 
 namespace Test
 {
-	void Hello();
+	__declspec(dllexport) void Hello();
 };

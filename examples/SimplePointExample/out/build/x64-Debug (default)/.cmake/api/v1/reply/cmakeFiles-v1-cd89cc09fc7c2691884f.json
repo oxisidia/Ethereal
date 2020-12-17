@@ -124,8 +124,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "Q:/Ethereal/out/build/x64-Debug (default)",
-		"source" : "Q:/Ethereal"
+		"build" : "Q:/Ethereal/examples/SimplePointExample/out/build/x64-Debug (default)",
+		"source" : "Q:/Ethereal/examples/SimplePointExample"
 	},
 	"version" : 
 	{

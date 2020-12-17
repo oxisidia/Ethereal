@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe"
+			"value" : "C:/PROGRA~2/MICROS~4/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1062,6 +1062,18 @@
 			"value" : "Q:/Ethereal/out/build/x64-Debug (default)"
 		},
 		{
+			"name" : "Ethereal_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Ethereal."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Ethereal_DIR-NOTFOUND"
+		},
+		{
 			"name" : "Ethereal_SOURCE_DIR",
 			"properties" : 
 			[
@@ -1072,6 +1084,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "Q:/Ethereal"
+		},
+		{
+			"name" : "Examples_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "Q:/Ethereal/out/build/x64-Debug (default)/examples"
+		},
+		{
+			"name" : "Examples_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "Q:/Ethereal/examples"
 		},
 		{
 			"name" : "PROJECT_NAME_BINARY_DIR",
@@ -1096,6 +1132,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "Q:/Ethereal"
+		},
+		{
+			"name" : "SimplePointExample_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "Q:/Ethereal/out/build/x64-Debug (default)/examples/SimplePointExample"
+		},
+		{
+			"name" : "SimplePointExample_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "Q:/Ethereal/examples/SimplePointExample"
 		}
 	],
 	"kind" : "cache",

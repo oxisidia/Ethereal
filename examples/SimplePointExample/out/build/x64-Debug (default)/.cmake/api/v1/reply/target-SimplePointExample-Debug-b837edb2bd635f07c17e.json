@@ -2,13 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Ethereal/Ethereal.dll"
+			"path" : "SimplePointExample.exe"
 		},
 		{
-			"path" : "Ethereal/Ethereal.lib"
-		},
-		{
-			"path" : "Ethereal/Ethereal.pdb"
+			"path" : "SimplePointExample.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -16,12 +13,12 @@
 	{
 		"commands" : 
 		[
-			"add_library",
+			"add_executable",
 			"install"
 		],
 		"files" : 
 		[
-			"Ethereal/CMakeLists.txt"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -31,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -54,12 +51,6 @@
 					"fragment" : "-std:c++17"
 				}
 			],
-			"defines" : 
-			[
-				{
-					"define" : "Ethereal_EXPORTS"
-				}
-			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
@@ -67,18 +58,14 @@
 			]
 		}
 	],
-	"id" : "Ethereal::@ddba6e94856f32c4ff7b",
+	"id" : "SimplePointExample::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
 		[
 			{
 				"backtrace" : 2,
-				"path" : "lib"
-			},
-			{
-				"backtrace" : 2,
-				"path" : "lib"
+				"path" : "bin"
 			}
 		],
 		"prefix" : 
@@ -91,7 +78,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{
@@ -101,12 +92,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Ethereal",
-	"nameOnDisk" : "Ethereal.dll",
+	"name" : "SimplePointExample",
+	"nameOnDisk" : "SimplePointExample.exe",
 	"paths" : 
 	{
-		"build" : "Ethereal",
-		"source" : "Ethereal"
+		"build" : ".",
+		"source" : "."
 	},
 	"sourceGroups" : 
 	[
@@ -123,9 +114,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Ethereal/Ethereal.cpp",
+			"path" : "SimplePointExample.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }
