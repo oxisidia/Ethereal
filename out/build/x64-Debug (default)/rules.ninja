@@ -18,9 +18,17 @@ msvc_deps_prefix = Note: including file:
 
 
 #############################################
+# Rule for running custom commands.
+
+rule CUSTOM_COMMAND
+  command = $COMMAND
+  description = $DESC
+
+
+#############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Ethereal_Debug
+rule CXX_COMPILER__ethereal_Debug
   deps = msvc
   command = C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
@@ -29,18 +37,10 @@ rule CXX_COMPILER__Ethereal_Debug
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__Ethereal_Debug
+rule CXX_STATIC_LIBRARY_LINKER__ethereal_Debug
   command = cmd.exe /C "$PRE_LINK && C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx64\x64\link.exe /lib /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
-
-
-#############################################
-# Rule for running custom commands.
-
-rule CUSTOM_COMMAND
-  command = $COMMAND
-  description = $DESC
 
 
 #############################################

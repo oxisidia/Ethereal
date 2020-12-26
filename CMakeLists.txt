@@ -3,21 +3,13 @@
 
 cmake_minimum_required(VERSION  3.15)
 
-project(Ethereal)
+project(Ethereal VERSION 0.0.1)
 
- #Specify the C++ standard
+# Set environment variables
+include(${PROJECT_SOURCE_DIR}/cmake/SetEnv.cmake)
 
-set(CMAKE_CXX_STANDARD 17)
+# Library sources
+add_subdirectory(${LIBRARY_FOLDER})
 
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-
-#Add the static version of library for compile time linking.
-add_library(Ethereal Ethereal.cpp)
-
-#Build the examples sub directory.
-add_subdirectory(${PROJECT_SOURCE_DIR}/examples)
-
-#Create the install targets and files.ß
-install(TARGETS Ethereal DESTINATION lib)
-
-install(FILES Ethereal.h DESTINATION include)
+# Library examples
+add_subdirectory(examples_internal)
