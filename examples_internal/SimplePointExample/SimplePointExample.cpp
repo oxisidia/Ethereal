@@ -7,9 +7,9 @@
 
 int main()
 {
-	std::cout << "Hello simple point example." << std::endl;
+	std::string Rez = Ethereal::SayHello();
 
-	Test::Hello();
+	std::cout << "Hello world " << Rez << std::endl;
 
 	return 0;
 }
