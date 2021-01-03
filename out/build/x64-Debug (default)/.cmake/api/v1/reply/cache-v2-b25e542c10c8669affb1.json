@@ -1698,6 +1698,18 @@
 			"value" : "googletest_DIR-NOTFOUND"
 		},
 		{
+			"name" : "gtest,_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for gtest,."
+				}
+			],
+			"type" : "PATH",
+			"value" : "gtest,_DIR-NOTFOUND"
+		},
+		{
 			"name" : "gtest_BINARY_DIR",
 			"properties" : 
 			[
@@ -1783,7 +1795,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "gtest_hide_internal_symbols",

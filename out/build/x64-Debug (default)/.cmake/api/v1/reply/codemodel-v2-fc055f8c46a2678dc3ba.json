@@ -67,7 +67,7 @@
 					"source" : "examples_internal/SimplePointExample",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -132,7 +132,7 @@
 					"source" : "Tests",
 					"targetIndexes" : 
 					[
-						1
+						0
 					]
 				}
 			],
@@ -207,17 +207,17 @@
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 7,
+					"id" : "ExampleTests::@3e3005ae7443f751ac85",
+					"jsonFile" : "target-ExampleTests-Debug-ff1d228c4a3ecb4c27fd.json",
+					"name" : "ExampleTests",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 3,
 					"id" : "SimplePointExample::@50144f801f0bfda25aa9",
 					"jsonFile" : "target-SimplePointExample-Debug-cbdfa3d9c53536593f9b.json",
 					"name" : "SimplePointExample",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "TEST_EXE::@3e3005ae7443f751ac85",
-					"jsonFile" : "target-TEST_EXE-Debug-f51c3e75b770cc9f0d6a.json",
-					"name" : "TEST_EXE",
 					"projectIndex" : 0
 				},
 				{
@@ -258,7 +258,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "uninstall::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-uninstall-Debug-539e54a2b9cf5c15fb89.json",
+					"jsonFile" : "target-uninstall-Debug-cc8a0568b4b734c291f6.json",
 					"name" : "uninstall",
 					"projectIndex" : 0
 				}
