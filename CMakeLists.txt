@@ -7,8 +7,6 @@ cmake_minimum_required(VERSION  3.15)
 #Declare a version number.
 project(Ethereal VERSION 0.0.1)
 
-enable_testing() #enable testing for this project.
-
 #Set environment variables
 include(${PROJECT_SOURCE_DIR}/cmake/SetEnv.cmake)
 
@@ -18,8 +16,7 @@ add_subdirectory(${LIBRARY_FOLDER})
 #Library examples
 add_subdirectory(examples_internal)
 
-#Add GTest library sub.
+#GTest
 add_subdirectory(Libraries/googletest)
 
-#Add Tests subdirectory.
 add_subdirectory(Tests)

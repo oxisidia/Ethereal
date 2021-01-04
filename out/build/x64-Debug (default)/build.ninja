@@ -42,30 +42,6 @@ build uninstall: phony CMakeFiles\uninstall
 
 
 #############################################
-# Utility command for rebuild_cache
-
-build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build rebuild_cache: phony CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for test
-
-build CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build test: phony CMakeFiles\test.util
-
-
-#############################################
 # Utility command for install/local
 
 build CMakeFiles\install\local.util: CUSTOM_COMMAND all
@@ -98,6 +74,18 @@ build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build edit_cache: phony CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 
 #############################################
@@ -155,30 +143,6 @@ build Ethereal\ethereal.lib: CXX_STATIC_LIBRARY_LINKER__ethereal_Debug Ethereal\
 
 
 #############################################
-# Utility command for rebuild_cache
-
-build Ethereal\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Ethereal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build Ethereal\rebuild_cache: phony Ethereal\CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for test
-
-build Ethereal\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Ethereal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build Ethereal\test: phony Ethereal\CMakeFiles\test.util
-
-
-#############################################
 # Utility command for install/local
 
 build Ethereal\CMakeFiles\install\local.util: CUSTOM_COMMAND Ethereal\all
@@ -214,6 +178,18 @@ build Ethereal\edit_cache: phony Ethereal\CMakeFiles\edit_cache.util
 
 
 #############################################
+# Utility command for rebuild_cache
+
+build Ethereal\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Ethereal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Ethereal\rebuild_cache: phony Ethereal\CMakeFiles\rebuild_cache.util
+
+
+#############################################
 # Utility command for list_install_components
 
 build Ethereal\list_install_components: phony
@@ -222,30 +198,6 @@ build Ethereal\list_install_components: phony
 # Write statements declared in CMakeLists.txt:
 # Q:/Ethereal/CMakeLists.txt
 # =============================================================================
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build examples_internal\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\examples_internal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build examples_internal\rebuild_cache: phony examples_internal\CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for test
-
-build examples_internal\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\examples_internal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build examples_internal\test: phony examples_internal\CMakeFiles\test.util
 
 
 #############################################
@@ -281,6 +233,18 @@ build examples_internal\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build examples_internal\edit_cache: phony examples_internal\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build examples_internal\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\examples_internal" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build examples_internal\rebuild_cache: phony examples_internal\CMakeFiles\rebuild_cache.util
 
 
 #############################################
@@ -333,30 +297,6 @@ build examples_internal\SimplePointExample\SimplePointExample.exe: CXX_EXECUTABL
 
 
 #############################################
-# Utility command for rebuild_cache
-
-build examples_internal\SimplePointExample\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\examples_internal\SimplePointExample" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build examples_internal\SimplePointExample\rebuild_cache: phony examples_internal\SimplePointExample\CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for test
-
-build examples_internal\SimplePointExample\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\examples_internal\SimplePointExample" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build examples_internal\SimplePointExample\test: phony examples_internal\SimplePointExample\CMakeFiles\test.util
-
-
-#############################################
 # Utility command for install/local
 
 build examples_internal\SimplePointExample\CMakeFiles\install\local.util: CUSTOM_COMMAND examples_internal\SimplePointExample\all
@@ -392,6 +332,18 @@ build examples_internal\SimplePointExample\edit_cache: phony examples_internal\S
 
 
 #############################################
+# Utility command for rebuild_cache
+
+build examples_internal\SimplePointExample\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\examples_internal\SimplePointExample" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build examples_internal\SimplePointExample\rebuild_cache: phony examples_internal\SimplePointExample\CMakeFiles\rebuild_cache.util
+
+
+#############################################
 # Utility command for list_install_components
 
 build examples_internal\SimplePointExample\list_install_components: phony
@@ -400,30 +352,6 @@ build examples_internal\SimplePointExample\list_install_components: phony
 # Write statements declared in CMakeLists.txt:
 # Q:/Ethereal/CMakeLists.txt
 # =============================================================================
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build Libraries\googletest\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Libraries\googletest" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build Libraries\googletest\rebuild_cache: phony Libraries\googletest\CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for test
-
-build Libraries\googletest\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Libraries\googletest" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build Libraries\googletest\test: phony Libraries\googletest\CMakeFiles\test.util
 
 
 #############################################
@@ -459,6 +387,18 @@ build Libraries\googletest\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build Libraries\googletest\edit_cache: phony Libraries\googletest\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Libraries\googletest\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Libraries\googletest" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Libraries\googletest\rebuild_cache: phony Libraries\googletest\CMakeFiles\rebuild_cache.util
 
 
 #############################################
@@ -614,18 +554,6 @@ build Libraries\googletest\googlemock\rebuild_cache: phony Libraries\googletest\
 
 
 #############################################
-# Utility command for test
-
-build Libraries\googletest\googlemock\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Libraries\googletest\googlemock" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build Libraries\googletest\googlemock\test: phony Libraries\googletest\googlemock\CMakeFiles\test.util
-
-
-#############################################
 # Utility command for list_install_components
 
 build Libraries\googletest\googlemock\list_install_components: phony
@@ -713,30 +641,6 @@ build lib\gtest_maind.lib: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug Libraries
 
 
 #############################################
-# Utility command for rebuild_cache
-
-build Libraries\googletest\googletest\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Libraries\googletest\googletest" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build Libraries\googletest\googletest\rebuild_cache: phony Libraries\googletest\googletest\CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for test
-
-build Libraries\googletest\googletest\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Libraries\googletest\googletest" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build Libraries\googletest\googletest\test: phony Libraries\googletest\googletest\CMakeFiles\test.util
-
-
-#############################################
 # Utility command for install/local
 
 build Libraries\googletest\googletest\CMakeFiles\install\local.util: CUSTOM_COMMAND Libraries\googletest\googletest\all
@@ -770,78 +674,70 @@ build Libraries\googletest\googletest\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
 
 build Libraries\googletest\googletest\edit_cache: phony Libraries\googletest\googletest\CMakeFiles\edit_cache.util
 
+
+#############################################
+# Utility command for rebuild_cache
+
+build Libraries\googletest\googletest\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Libraries\googletest\googletest" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Libraries\googletest\googletest\rebuild_cache: phony Libraries\googletest\googletest\CMakeFiles\rebuild_cache.util
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # Q:/Ethereal/CMakeLists.txt
 # =============================================================================
 
-
-#############################################
-# Utility command for list_install_components
-
-build Tests\list_install_components: phony
-
 # =============================================================================
-# Object build statements for EXECUTABLE target ExampleTests
+# Object build statements for EXECUTABLE target TEST_EXE
 
 
 #############################################
-# Order-only phony target for ExampleTests
+# Order-only phony target for TEST_EXE
 
-build cmake_object_order_depends_target_ExampleTests: phony || cmake_object_order_depends_target_ethereal cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_TEST_EXE: phony || cmake_object_order_depends_target_ethereal cmake_object_order_depends_target_gtest
 
-build Tests\CMakeFiles\ExampleTests.dir\test.cpp.obj: CXX_COMPILER__ExampleTests_Debug ..\..\..\Tests\test.cpp || cmake_object_order_depends_target_ExampleTests
+build Tests\CMakeFiles\TEST_EXE.dir\main.cpp.obj: CXX_COMPILER__TEST_EXE_Debug ..\..\..\Tests\main.cpp || cmake_object_order_depends_target_TEST_EXE
   DEFINES = -DETHEREAL_DEBUG=1
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   INCLUDES = -I..\..\..\ -Igenerated_headers -I..\..\..\Libraries\googletest\googletest\include -I..\..\..\Libraries\googletest\googletest
-  OBJECT_DIR = Tests\CMakeFiles\ExampleTests.dir
-  OBJECT_FILE_DIR = Tests\CMakeFiles\ExampleTests.dir
-  TARGET_COMPILE_PDB = Tests\CMakeFiles\ExampleTests.dir\
-  TARGET_PDB = Tests\ExampleTests.pdb
+  OBJECT_DIR = Tests\CMakeFiles\TEST_EXE.dir
+  OBJECT_FILE_DIR = Tests\CMakeFiles\TEST_EXE.dir
+  TARGET_COMPILE_PDB = Tests\CMakeFiles\TEST_EXE.dir\
+  TARGET_PDB = Tests\TEST_EXE.pdb
+
+build Tests\CMakeFiles\TEST_EXE.dir\test.cpp.obj: CXX_COMPILER__TEST_EXE_Debug ..\..\..\Tests\test.cpp || cmake_object_order_depends_target_TEST_EXE
+  DEFINES = -DETHEREAL_DEBUG=1
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -I..\..\..\ -Igenerated_headers -I..\..\..\Libraries\googletest\googletest\include -I..\..\..\Libraries\googletest\googletest
+  OBJECT_DIR = Tests\CMakeFiles\TEST_EXE.dir
+  OBJECT_FILE_DIR = Tests\CMakeFiles\TEST_EXE.dir
+  TARGET_COMPILE_PDB = Tests\CMakeFiles\TEST_EXE.dir\
+  TARGET_PDB = Tests\TEST_EXE.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ExampleTests
+# Link build statements for EXECUTABLE target TEST_EXE
 
 
 #############################################
-# Link the executable Tests\ExampleTests.exe
+# Link the executable Tests\TEST_EXE.exe
 
-build Tests\ExampleTests.exe: CXX_EXECUTABLE_LINKER__ExampleTests_Debug Tests\CMakeFiles\ExampleTests.dir\test.cpp.obj | Ethereal\ethereal.lib lib\gtest_maind.lib lib\gtestd.lib || Ethereal\ethereal.lib lib\gtest_maind.lib lib\gtestd.lib
+build Tests\TEST_EXE.exe Tests\TEST_EXE[1]_tests.cmake: CXX_EXECUTABLE_LINKER__TEST_EXE_Debug Tests\CMakeFiles\TEST_EXE.dir\main.cpp.obj Tests\CMakeFiles\TEST_EXE.dir\test.cpp.obj | Ethereal\ethereal.lib lib\gtestd.lib || Ethereal\ethereal.lib lib\gtestd.lib
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = Ethereal\ethereal.lib  lib\gtest_maind.lib  lib\gtestd.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = Tests\CMakeFiles\ExampleTests.dir
-  POST_BUILD = cd .
+  LINK_LIBRARIES = Ethereal\ethereal.lib  lib\gtestd.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = Tests\CMakeFiles\TEST_EXE.dir
+  POST_BUILD = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Tests" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D TEST_TARGET=TEST_EXE -D "TEST_EXECUTABLE=Q:/Ethereal/out/build/x64-Debug (default)/Tests/TEST_EXE.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=Q:/Ethereal/out/build/x64-Debug (default)/Tests" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=TEST_EXE_TESTS -D "CTEST_FILE=Q:/Ethereal/out/build/x64-Debug (default)/Tests/TEST_EXE[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.18/Modules/GoogleTestAddTests.cmake""
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = Tests\CMakeFiles\ExampleTests.dir\
-  TARGET_FILE = Tests\ExampleTests.exe
-  TARGET_IMPLIB = Tests\ExampleTests.lib
-  TARGET_PDB = Tests\ExampleTests.pdb
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build Tests\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Tests" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build Tests\rebuild_cache: phony Tests\CMakeFiles\rebuild_cache.util
-
-
-#############################################
-# Utility command for test
-
-build Tests\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Tests" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build Tests\test: phony Tests\CMakeFiles\test.util
+  RESTAT = 1
+  TARGET_COMPILE_PDB = Tests\CMakeFiles\TEST_EXE.dir\
+  TARGET_FILE = Tests\TEST_EXE.exe
+  TARGET_IMPLIB = Tests\TEST_EXE.lib
+  TARGET_PDB = Tests\TEST_EXE.pdb
 
 
 #############################################
@@ -878,16 +774,34 @@ build Tests\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
 
 build Tests\edit_cache: phony Tests\CMakeFiles\edit_cache.util
 
+
+#############################################
+# Utility command for rebuild_cache
+
+build Tests\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "Q:\Ethereal\out\build\x64-Debug (default)\Tests" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SQ:\Ethereal -B"Q:\Ethereal\out\build\x64-Debug (default)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Tests\rebuild_cache: phony Tests\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Tests\list_install_components: phony
+
 # =============================================================================
 # Target aliases.
-
-build ExampleTests: phony Tests\ExampleTests.exe
-
-build ExampleTests.exe: phony Tests\ExampleTests.exe
 
 build SimplePointExample: phony examples_internal\SimplePointExample\SimplePointExample.exe
 
 build SimplePointExample.exe: phony examples_internal\SimplePointExample\SimplePointExample.exe
+
+build TEST_EXE: phony Tests\TEST_EXE.exe
+
+build TEST_EXE.exe: phony Tests\TEST_EXE.exe
 
 build ethereal: phony Ethereal\ethereal.lib
 
@@ -952,7 +866,7 @@ build Libraries\googletest\googletest\all: phony lib\gtestd.lib lib\gtest_maind.
 #############################################
 # Folder: Q:/Ethereal/out/build/x64-Debug (default)/Tests
 
-build Tests\all: phony Tests\ExampleTests.exe
+build Tests\all: phony Tests\TEST_EXE.exe
 
 # =============================================================================
 
@@ -975,14 +889,14 @@ build examples_internal\SimplePointExample\all: phony examples_internal\SimplePo
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\Ethereal\CMakeLists.txt ..\..\..\Ethereal\version.h.in ..\..\..\Libraries\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\cmake\gmock.pc.in ..\..\..\Libraries\googletest\googlemock\cmake\gmock_main.pc.in ..\..\..\Libraries\googletest\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googletest\cmake\Config.cmake.in ..\..\..\Libraries\googletest\googletest\cmake\gtest.pc.in ..\..\..\Libraries\googletest\googletest\cmake\gtest_main.pc.in ..\..\..\Libraries\googletest\googletest\cmake\internal_utils.cmake ..\..\..\Tests\CMakeLists.txt ..\..\..\cmake\CMakeRegistry.cmake ..\..\..\cmake\Config.cmake.in ..\..\..\cmake\LibraryConfig.cmake ..\..\..\cmake\SetEnv.cmake ..\..\..\cmake\Uninstall.cmake.in ..\..\..\examples_internal\CMakeLists.txt ..\..\..\examples_internal\SimplePointExample\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\Ethereal\CMakeLists.txt ..\..\..\Ethereal\version.h.in ..\..\..\Libraries\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\cmake\gmock.pc.in ..\..\..\Libraries\googletest\googlemock\cmake\gmock_main.pc.in ..\..\..\Libraries\googletest\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googletest\cmake\Config.cmake.in ..\..\..\Libraries\googletest\googletest\cmake\gtest.pc.in ..\..\..\Libraries\googletest\googletest\cmake\gtest_main.pc.in ..\..\..\Libraries\googletest\googletest\cmake\internal_utils.cmake ..\..\..\Tests\CMakeLists.txt ..\..\..\cmake\CMakeRegistry.cmake ..\..\..\cmake\Config.cmake.in ..\..\..\cmake\LibraryConfig.cmake ..\..\..\cmake\SetEnv.cmake ..\..\..\cmake\Uninstall.cmake.in ..\..\..\examples_internal\CMakeLists.txt ..\..\..\examples_internal\SimplePointExample\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindGTest.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GoogleTest.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\Ethereal\CMakeLists.txt ..\..\..\Ethereal\version.h.in ..\..\..\Libraries\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\cmake\gmock.pc.in ..\..\..\Libraries\googletest\googlemock\cmake\gmock_main.pc.in ..\..\..\Libraries\googletest\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googletest\cmake\Config.cmake.in ..\..\..\Libraries\googletest\googletest\cmake\gtest.pc.in ..\..\..\Libraries\googletest\googletest\cmake\gtest_main.pc.in ..\..\..\Libraries\googletest\googletest\cmake\internal_utils.cmake ..\..\..\Tests\CMakeLists.txt ..\..\..\cmake\CMakeRegistry.cmake ..\..\..\cmake\Config.cmake.in ..\..\..\cmake\LibraryConfig.cmake ..\..\..\cmake\SetEnv.cmake ..\..\..\cmake\Uninstall.cmake.in ..\..\..\examples_internal\CMakeLists.txt ..\..\..\examples_internal\SimplePointExample\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\Ethereal\CMakeLists.txt ..\..\..\Ethereal\version.h.in ..\..\..\Libraries\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\CMakeLists.txt ..\..\..\Libraries\googletest\googlemock\cmake\gmock.pc.in ..\..\..\Libraries\googletest\googlemock\cmake\gmock_main.pc.in ..\..\..\Libraries\googletest\googletest\CMakeLists.txt ..\..\..\Libraries\googletest\googletest\cmake\Config.cmake.in ..\..\..\Libraries\googletest\googletest\cmake\gtest.pc.in ..\..\..\Libraries\googletest\googletest\cmake\gtest_main.pc.in ..\..\..\Libraries\googletest\googletest\cmake\internal_utils.cmake ..\..\..\Tests\CMakeLists.txt ..\..\..\cmake\CMakeRegistry.cmake ..\..\..\cmake\Config.cmake.in ..\..\..\cmake\LibraryConfig.cmake ..\..\..\cmake\SetEnv.cmake ..\..\..\cmake\Uninstall.cmake.in ..\..\..\examples_internal\CMakeLists.txt ..\..\..\examples_internal\SimplePointExample\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindGTest.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GoogleTest.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################

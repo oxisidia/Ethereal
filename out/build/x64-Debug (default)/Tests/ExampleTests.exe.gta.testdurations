@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Executable>Q:\Ethereal\out\build\x64-Debug (default)\Tests\ExampleTests.exe</Executable>
-  <TestDurations>
-    <TestDuration Test="ExampleTests.test1" Duration="1" />
-    <TestDuration Test="ExampleTest2.test2" Duration="1" />
-    <TestDuration Test="ExampleTests.Test3" Duration="1" />
-  </TestDurations>
-</GtaTestDurations>
