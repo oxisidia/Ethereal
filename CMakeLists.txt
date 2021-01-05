@@ -16,6 +16,10 @@ add_subdirectory(${LIBRARY_FOLDER})
 #Library examples
 add_subdirectory(examples_internal)
 
+#Testing------------------------------------->>>>
+
+enable_testing()
+
 #GTest
 add_subdirectory(Libraries/googletest)
 

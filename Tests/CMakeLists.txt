@@ -1,18 +1,23 @@
 message("-- Building Tests")
 
-set(BINARY ${CMAKE_PROJECT_NAME}Tests)
+set(This PointTests)
 
-file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
+#set(BINARY ${CMAKE_PROJECT_NAME}Tests)
 
-set(SOURCES ${TEST_SOURCES})
+#file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
 
-add_executable(TEST_EXE ${TEST_SOURCES} "main.cpp" "test.cpp")
+set(SOURCES test.cpp)
+
+add_executable(${This} "main.cpp" "test.cpp")
 
 #Find the google test package.
-find_package(GTest)
+#find_package(GTest)
 
-target_link_libraries(TEST_EXE PUBLIC Ethereal::ethereal gtest)
+target_link_libraries(${This} PUBLIC Ethereal::ethereal gtest_main)
 
-enable_testing() #Enable testing of the Ethereal library.
+add_test(
 
-gtest_discover_tests(TEST_EXE) #doesn't work yet.'
+	NAME ${This}
+	
+	COMMAND ${This}
+)

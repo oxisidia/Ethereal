@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Tests/TEST_EXE.exe"
+			"path" : "Tests/PointTests.exe"
 		},
 		{
-			"path" : "Tests/TEST_EXE.pdb"
+			"path" : "Tests/PointTests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,8 @@
 		],
 		"files" : 
 		[
-			"Tests/CMakeLists.txt"
+			"Tests/CMakeLists.txt",
+			"Libraries/googletest/googletest/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -28,14 +29,23 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 9,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 14,
+				"line" : 16,
 				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 143,
+				"parent" : 3
 			}
 		]
 	},
@@ -88,14 +98,18 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "ethereal::@ddba6e94856f32c4ff7b"
+			"id" : "gtest::@a2cceb7211c2c4d7dbb5"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@a2cceb7211c2c4d7dbb5"
+			"id" : "gtest_main::@a2cceb7211c2c4d7dbb5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ethereal::@ddba6e94856f32c4ff7b"
 		}
 	],
-	"id" : "TEST_EXE::@3e3005ae7443f751ac85",
+	"id" : "PointTests::@3e3005ae7443f751ac85",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -115,6 +129,11 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "..\\lib\\gtest_maind.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
 				"fragment" : "..\\lib\\gtestd.lib",
 				"role" : "libraries"
 			},
@@ -125,8 +144,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "TEST_EXE",
-	"nameOnDisk" : "TEST_EXE.exe",
+	"name" : "PointTests",
+	"nameOnDisk" : "PointTests.exe",
 	"paths" : 
 	{
 		"build" : "Tests",

@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-TEST(blaTest, test1)
+TEST(PointTests, test1)
 {
 	EXPECT_EQ(1, 1);
 
