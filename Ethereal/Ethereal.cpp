@@ -4,7 +4,7 @@
 
 std::string Ethereal::SayHello()
 {
-	std::cout << "Did this work " << std::endl;
+	std::cout << "Hello from Ethereal" << std::endl;
 
 	return "Hello from Ethereal";
 }
