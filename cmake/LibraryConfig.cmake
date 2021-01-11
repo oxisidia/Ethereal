@@ -3,7 +3,7 @@ add_library(${LIBRARY_NAME}
   ${SOURCES}
   ${HEADERS_PUBLIC}
   ${HEADERS_PRIVATE}
-   "../Ethereal/Ethereal.cpp")
+   "../Ethereal/Ethereal.cpp" "../Ethereal/PointDef.h")
 
 # Alias:
 #   - Foo::foo alias of foo

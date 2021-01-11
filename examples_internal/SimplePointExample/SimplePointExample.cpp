@@ -4,30 +4,17 @@
 
 #include "SimplePointExample.h"
 #include <Ethereal/Ethereal.h>
+#include <Ethereal/PointDef.h>
 
-//#include "../../Libraries/eigen-3.3.9/Eigen/Dense"
-
-//using namespace Eigen;
+using namespace Points;
 
 int main()
 {
-	std::string Rez = Ethereal::SayHello();
+	Ethereal::SayHello();
 
-	//std::cout << "Hello world " << Rez << std::endl;
+	Point3d p1(1, 0, 0);
 
-	//
-
-	//MatrixXd m(2, 2);
-
-	//m(0, 0) = 3;
-
-	//m(1, 0) = 2.5;
-
-	//m(0, 1) = -1;
-
-	//m(1, 1) = m(1, 0) + m(0, 1);
-
-	//std::cout << m << std::endl;
+	Point2d p2(5, 9);
 
 	return 0;
 }
