@@ -2,7 +2,7 @@ message("-- Building Tests")
 
 set(This PointTests) #Set the name for the tests.
 
-add_executable(${This}  "test.cpp") #Add the test executable.
+add_executable(${This}  "PointTest.cpp") #Add the test executable.
 
 #Target the required libraries------------------------------------->>>>
 

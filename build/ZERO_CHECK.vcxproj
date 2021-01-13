@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8E464773-8DE5-3D26-852F-457A13E910FD}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Q:\Ethereal\build\CMakeFiles\abdd7c36027402cfe7aa6222a3d1d1dd\generate.stamp.rule">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SQ:/Ethereal -BQ:/Ethereal/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file Q:/Ethereal/build/Ethereal.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;Q:\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\version.h.in;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Config.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3ConfigVersion.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Targets.cmake;Q:\Ethereal\Libraries\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock.pc.in;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googletest\cmake\Config.cmake.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\internal_utils.cmake;Q:\Ethereal\Tests\CMakeLists.txt;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCXXCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeSystem.cmake;Q:\Ethereal\cmake\CMakeRegistry.cmake;Q:\Ethereal\cmake\Config.cmake.in;Q:\Ethereal\cmake\LibraryConfig.cmake;Q:\Ethereal\cmake\SetEnv.cmake;Q:\Ethereal\cmake\Uninstall.cmake.in;Q:\Ethereal\examples_internal\CMakeLists.txt;Q:\Ethereal\examples_internal\SimplePointExample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Q:\Ethereal\build\CMakeFiles\generate.stamp;Q:\Ethereal\build\Ethereal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\SimplePointExample\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googlemock\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SQ:/Ethereal -BQ:/Ethereal/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file Q:/Ethereal/build/Ethereal.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;Q:\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\version.h.in;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Config.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3ConfigVersion.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Targets.cmake;Q:\Ethereal\Libraries\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock.pc.in;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googletest\cmake\Config.cmake.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\internal_utils.cmake;Q:\Ethereal\Tests\CMakeLists.txt;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCXXCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeSystem.cmake;Q:\Ethereal\cmake\CMakeRegistry.cmake;Q:\Ethereal\cmake\Config.cmake.in;Q:\Ethereal\cmake\LibraryConfig.cmake;Q:\Ethereal\cmake\SetEnv.cmake;Q:\Ethereal\cmake\Uninstall.cmake.in;Q:\Ethereal\examples_internal\CMakeLists.txt;Q:\Ethereal\examples_internal\SimplePointExample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Q:\Ethereal\build\CMakeFiles\generate.stamp;Q:\Ethereal\build\Ethereal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\SimplePointExample\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googlemock\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SQ:/Ethereal -BQ:/Ethereal/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file Q:/Ethereal/build/Ethereal.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;Q:\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\version.h.in;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Config.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3ConfigVersion.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Targets.cmake;Q:\Ethereal\Libraries\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock.pc.in;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googletest\cmake\Config.cmake.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\internal_utils.cmake;Q:\Ethereal\Tests\CMakeLists.txt;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCXXCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeSystem.cmake;Q:\Ethereal\cmake\CMakeRegistry.cmake;Q:\Ethereal\cmake\Config.cmake.in;Q:\Ethereal\cmake\LibraryConfig.cmake;Q:\Ethereal\cmake\SetEnv.cmake;Q:\Ethereal\cmake\Uninstall.cmake.in;Q:\Ethereal\examples_internal\CMakeLists.txt;Q:\Ethereal\examples_internal\SimplePointExample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Q:\Ethereal\build\CMakeFiles\generate.stamp;Q:\Ethereal\build\Ethereal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\SimplePointExample\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googlemock\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SQ:/Ethereal -BQ:/Ethereal/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file Q:/Ethereal/build/Ethereal.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;Q:\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\CMakeLists.txt;Q:\Ethereal\Ethereal\version.h.in;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Config.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3ConfigVersion.cmake;Q:\Ethereal\Libraries\eigen-3.3.9\out\build\x64-Debug (default)\Eigen3Targets.cmake;Q:\Ethereal\Libraries\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock.pc.in;Q:\Ethereal\Libraries\googletest\googlemock\cmake\gmock_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\CMakeLists.txt;Q:\Ethereal\Libraries\googletest\googletest\cmake\Config.cmake.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\gtest_main.pc.in;Q:\Ethereal\Libraries\googletest\googletest\cmake\internal_utils.cmake;Q:\Ethereal\Tests\CMakeLists.txt;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeCXXCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;Q:\Ethereal\build\CMakeFiles\3.18.4\CMakeSystem.cmake;Q:\Ethereal\cmake\CMakeRegistry.cmake;Q:\Ethereal\cmake\Config.cmake.in;Q:\Ethereal\cmake\LibraryConfig.cmake;Q:\Ethereal\cmake\SetEnv.cmake;Q:\Ethereal\cmake\Uninstall.cmake.in;Q:\Ethereal\examples_internal\CMakeLists.txt;Q:\Ethereal\examples_internal\SimplePointExample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Q:\Ethereal\build\CMakeFiles\generate.stamp;Q:\Ethereal\build\Ethereal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\CMakeFiles\generate.stamp;Q:\Ethereal\build\examples_internal\SimplePointExample\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googlemock\CMakeFiles\generate.stamp;Q:\Ethereal\build\Libraries\googletest\googletest\CMakeFiles\generate.stamp;Q:\Ethereal\build\Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

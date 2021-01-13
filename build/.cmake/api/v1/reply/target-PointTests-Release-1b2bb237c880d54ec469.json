@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Tests/PointTests.exe"
+			"path" : "Tests/Release/PointTests.exe"
 		},
 		{
-			"path" : "Tests/PointTests.pdb"
+			"path" : "Tests/Release/PointTests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,14 +45,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd"
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD"
 				}
 			],
 			"defines" : 
 			[
 				{
 					"backtrace" : 2,
-					"define" : "ETHEREAL_DEBUG=1"
+					"define" : "ETHEREAL_DEBUG=0"
 				}
 			],
 			"includes" : 
@@ -63,7 +63,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "Q:/Ethereal/out/build/x64-Debug (default)/generated_headers"
+					"path" : "Q:/Ethereal/build/generated_headers"
 				},
 				{
 					"backtrace" : 2,
@@ -96,6 +96,9 @@
 		{
 			"backtrace" : 2,
 			"id" : "gtest::@a2cceb7211c2c4d7dbb5"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "PointTests::@3e3005ae7443f751ac85",
@@ -104,25 +107,25 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"fragment" : "/machine:X86 /INCREMENTAL:NO /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\Ethereal\\ethereal.lib",
+				"fragment" : "..\\Ethereal\\Release\\ethereal.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\lib\\gtest_maind.lib",
+				"fragment" : "..\\lib\\Release\\gtest_main.lib",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "..\\lib\\gtestd.lib",
+				"fragment" : "..\\lib\\Release\\gtest.lib",
 				"role" : "libraries"
 			},
 			{

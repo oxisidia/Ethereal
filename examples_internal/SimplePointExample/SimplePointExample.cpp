@@ -13,6 +13,8 @@ int main()
 	Ethereal::SayHello();
 
 	Point3d p1(1, 0, 0);
+	
+	std::cout << "The x val of p1 is:" << p1.x() << std::endl;
 
 	Point2d p2(5, 9);
 

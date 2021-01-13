@@ -790,7 +790,7 @@ build Tests\list_install_components: phony
 
 build cmake_object_order_depends_target_PointTests: phony || cmake_object_order_depends_target_ethereal cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build Tests\CMakeFiles\PointTests.dir\test.cpp.obj: CXX_COMPILER__PointTests_Debug ..\..\..\Tests\test.cpp || cmake_object_order_depends_target_PointTests
+build Tests\CMakeFiles\PointTests.dir\PointTest.cpp.obj: CXX_COMPILER__PointTests_Debug ..\..\..\Tests\PointTest.cpp || cmake_object_order_depends_target_PointTests
   DEFINES = -DETHEREAL_DEBUG=1
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   INCLUDES = -I..\..\..\ -Igenerated_headers -I..\..\..\Libraries\googletest\googletest\include -I..\..\..\Libraries\googletest\googletest
@@ -807,7 +807,7 @@ build Tests\CMakeFiles\PointTests.dir\test.cpp.obj: CXX_COMPILER__PointTests_Deb
 #############################################
 # Link the executable Tests\PointTests.exe
 
-build Tests\PointTests.exe: CXX_EXECUTABLE_LINKER__PointTests_Debug Tests\CMakeFiles\PointTests.dir\test.cpp.obj | Ethereal\ethereal.lib lib\gtest_maind.lib lib\gtestd.lib || Ethereal\ethereal.lib lib\gtest_maind.lib lib\gtestd.lib
+build Tests\PointTests.exe: CXX_EXECUTABLE_LINKER__PointTests_Debug Tests\CMakeFiles\PointTests.dir\PointTest.cpp.obj | Ethereal\ethereal.lib lib\gtest_maind.lib lib\gtestd.lib || Ethereal\ethereal.lib lib\gtest_maind.lib lib\gtestd.lib
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = Ethereal\ethereal.lib  lib\gtest_maind.lib  lib\gtestd.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
