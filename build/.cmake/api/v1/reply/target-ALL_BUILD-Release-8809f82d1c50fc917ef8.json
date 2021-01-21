@@ -17,16 +17,16 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "gtest_main::@a2cceb7211c2c4d7dbb5"
+			"id" : "gmock_main::@a1ad7e86cb3cd53d65a3"
+		},
+		{
+			"id" : "gtest::@a2cceb7211c2c4d7dbb5"
 		},
 		{
 			"id" : "gmock::@a1ad7e86cb3cd53d65a3"
 		},
 		{
-			"id" : "gmock_main::@a1ad7e86cb3cd53d65a3"
-		},
-		{
-			"id" : "gtest::@a2cceb7211c2c4d7dbb5"
+			"id" : "gtest_main::@a2cceb7211c2c4d7dbb5"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"

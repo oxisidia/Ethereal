@@ -5,7 +5,7 @@
 		"commands" : [],
 		"files" : 
 		[
-			"Libraries/googletest/googlemock/CMakeLists.txt"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -17,28 +17,37 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "gtest_main::@a2cceb7211c2c4d7dbb5"
+			"id" : "ethereal::@ddba6e94856f32c4ff7b"
 		},
 		{
-			"id" : "gmock::@a1ad7e86cb3cd53d65a3"
+			"id" : "SimplePointExample::@50144f801f0bfda25aa9"
 		},
 		{
 			"id" : "gmock_main::@a1ad7e86cb3cd53d65a3"
 		},
 		{
+			"id" : "PointTests::@3e3005ae7443f751ac85"
+		},
+		{
 			"id" : "gtest::@a2cceb7211c2c4d7dbb5"
+		},
+		{
+			"id" : "gmock::@a1ad7e86cb3cd53d65a3"
+		},
+		{
+			"id" : "gtest_main::@a2cceb7211c2c4d7dbb5"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "ALL_BUILD::@a1ad7e86cb3cd53d65a3",
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
 	"name" : "ALL_BUILD",
 	"paths" : 
 	{
-		"build" : "Libraries/googletest/googlemock",
-		"source" : "Libraries/googletest/googlemock"
+		"build" : ".",
+		"source" : "."
 	},
 	"sources" : [],
 	"type" : "UTILITY"

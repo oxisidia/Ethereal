@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include <Ethereal/PointDef.h>
+#include <thread>
 
 namespace PointTests
 {
@@ -122,11 +123,6 @@ namespace PointTests
 		}
 
 		TEST(PointTests, TranspositionMulti)
-		{
-			EXPECT_EQ(1, 1);
-		}
-
-		TEST(PointTests, DeletionMulti)
 		{
 			EXPECT_EQ(1, 1);
 		}

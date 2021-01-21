@@ -12,7 +12,7 @@ namespace Points
 	typedef Vector3d Point3d;
 
 	/// <summary>
-	/// The Ethereal 2d point class. Ethereal is a 3D application so use this class sparingly within the kernel. 
+	/// The Ethereal 2d point class.
 	/// </summary>
 	typedef Vector2d Point2d;
 
@@ -24,9 +24,11 @@ namespace Points
 	/// <returns></returns>
 	double Distance(Point3d P1, Point3d P2)
 	{
+		//Calculate distance with the standard distance formula.
+
 		return sqrt(
 
-			pow(P1.x() - P2.x(), 2) +
+			pow(P1.x() - P2.x(), 2) + 
 
 			pow(P1.y() - P2.y(), 2) +
 

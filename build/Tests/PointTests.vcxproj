@@ -309,7 +309,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Q:\Ethereal\Tests\test.cpp" />
+    <ClCompile Include="Q:\Ethereal\Tests\PointTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Q:\Ethereal\build\ZERO_CHECK.vcxproj">

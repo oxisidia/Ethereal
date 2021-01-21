@@ -1,4 +1,4 @@
-#Find the eigen library.
+#Find the Eigen library.
 find_package(Eigen3 3.3 REQUIRED PATHS ../../Libraires/eigen-3.3.9/cmake) 
 
 # Set SOURCES variable

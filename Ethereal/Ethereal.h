@@ -1,12 +1,8 @@
 #include <string>
 
-#include "../Libraries/eigen-3.3.9/Eigen/Dense"
-
 namespace Ethereal
 {
-	using Eigen::MatrixXd;
+	const double Pi = 3.14159; //Define pi.
 
 	std::string SayHello();
-
-	void EigenTest();
 };

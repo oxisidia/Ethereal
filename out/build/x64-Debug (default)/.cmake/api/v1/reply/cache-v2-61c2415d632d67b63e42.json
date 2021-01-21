@@ -1446,6 +1446,18 @@
 			"value" : "Q:/Ethereal"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenCL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding OpenCL"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64/OpenCL.lib][C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/include][v1.2()]"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python",
 			"properties" : 
 			[
@@ -1470,6 +1482,18 @@
 			"value" : "[TRUE][v()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Vulkan",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Vulkan"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[C:/VulkanSDK/1.2.154.1/Lib/vulkan-1.lib][C:/VulkanSDK/1.2.154.1/Include][v()]"
+		},
+		{
 			"name" : "INSTALL_GTEST",
 			"properties" : 
 			[
@@ -1480,6 +1504,118 @@
 			],
 			"type" : "BOOL",
 			"value" : "ON"
+		},
+		{
+			"name" : "OPENCL_VERSION_1_2",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have symbol CL_VERSION_1_2"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "OPENCL_VERSION_2_0",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have symbol CL_VERSION_2_0"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "OPENCL_VERSION_2_1",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have symbol CL_VERSION_2_1"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "OPENCL_VERSION_2_2",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have symbol CL_VERSION_2_2"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "OpenCL_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/include"
+		},
+		{
+			"name" : "OpenCL_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64/OpenCL.lib"
+		},
+		{
+			"name" : "Vulkan_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/VulkanSDK/1.2.154.1/Include"
+		},
+		{
+			"name" : "Vulkan_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/VulkanSDK/1.2.154.1/Lib/vulkan-1.lib"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -1528,6 +1664,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "c5c26f8bad1592b509ccea855b65dba2"
+		},
+		{
+			"name" : "compute_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for compute."
+				}
+			],
+			"type" : "PATH",
+			"value" : "compute_DIR-NOTFOUND"
 		},
 		{
 			"name" : "generated_dir",
@@ -1732,6 +1880,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "GTestTargets"
+		},
+		{
+			"name" : "vuh_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for vuh."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Program Files (x86)/vuh/lib/cmake/vuh"
 		}
 	],
 	"kind" : "cache",
