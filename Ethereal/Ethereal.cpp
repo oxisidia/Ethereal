@@ -1,8 +1,10 @@
-﻿#include "Ethereal.h"
+#include "Ethereal.h"
+#include <stdio.h> 
+#include <iostream>
 
-using namespace std;
-
- void Test::Hello()
+std::string Ethereal::SayHello()
 {
-    cout << "Hello from Ethereal!" << endl;
+	std::cout << "Hello from Ethereal" << std::endl;
+
+	return "Hello from Ethereal";
 }

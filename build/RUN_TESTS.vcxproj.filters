@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="Q:\Ethereal\build\CMakeFiles\abdd7c36027402cfe7aa6222a3d1d1dd\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{260359D5-A07E-3449-BEC6-7B133923291A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

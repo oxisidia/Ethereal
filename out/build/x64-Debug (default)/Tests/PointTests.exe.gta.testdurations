@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>Q:\Ethereal\out\build\x64-Debug (default)\Tests\PointTests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="PointTests.test1" Duration="1" />
+    <TestDuration Test="PointTests.Creation" Duration="1" />
+    <TestDuration Test="PointTests.Copy" Duration="1" />
+    <TestDuration Test="PointTests.Distance" Duration="1" />
+    <TestDuration Test="PointTests.Translation" Duration="1" />
+    <TestDuration Test="PointTests.Transposition" Duration="1" />
+    <TestDuration Test="PointTests.Deletion" Duration="1" />
+    <TestDuration Test="PointTests.CreationMulti" Duration="1" />
+    <TestDuration Test="PointTests.CopyMulti" Duration="1" />
+    <TestDuration Test="PointTests.DistanceMulti" Duration="1" />
+    <TestDuration Test="PointTests.TranslationMulti" Duration="1" />
+    <TestDuration Test="PointTests.TranspositionMulti" Duration="1" />
+    <TestDuration Test="PointTests.DeletionMulti" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
