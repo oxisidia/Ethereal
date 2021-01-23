@@ -8,11 +8,21 @@ Ethereal will be built from the ground up to take advantage of the multicored co
 
 # Building
 
-Ethereal uses the cmake build system. I've spent a decent bit of timing trying to implement cmake to allow this project to be built and used across systems and IDEs. That being said I am new to CMake so if you see something definitly do 
+Ethereal uses the cmake build system. I've spent a decent bit of timing trying to implement cmake to allow this project to be built and used across systems and IDEs. That being said I am new to CMake so if you see something definitly do say something. 
 
-say something. The Ethereal Cmake should either generate the required project files for your IDE or open directly within. Once loaded a simple build command should be all that is necessary. Thank you to Pablo Speciale and
+The Ethereal Cmake should either generate the required project files for your IDE or open directly within.
 
-any other contributors for providing this excellent CMake example (https://github.com/pablospe/cmake-example-library) upon which Ethereal's is currently based. Please find below a copy of the the cmake-example-library's license. 
+## Dependencies
+
+Ethereal currently requires the following dependencies which can be cloned from the links below:
+
+Eigen: http://eigen.tuxfamily.org/index.php?title=Main_Page
+
+GoogleTest: https://github.com/google/googletest
+
+I found it best to simply generate the cmake build for each dependency, then build the project and finally install both eigen and google test.
+
+Thank you to Pablo Speciale and any other contributors project contributors for providing this excellent CMake example (https://github.com/pablospe/cmake-example-library) upon which Ethereal's is currently based. Please find below a copy of the the cmake-example-library's license. 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
