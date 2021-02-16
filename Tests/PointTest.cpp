@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include <Ethereal/PointDef.h>
+#include <Ethereal/Points/PointDef.h>
 #include <thread>
 
 namespace PointTests

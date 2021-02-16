@@ -4,7 +4,7 @@
 
 #include "SimplePointExample.h"
 #include <Ethereal/Ethereal.h>
-#include <Ethereal/PointDef.h>
+#include <Ethereal/Points/PointDef.h>
 
 using namespace Points;
 

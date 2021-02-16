@@ -2,7 +2,6 @@
 set(${Eigen3_DIR} "../../Libraires/eigen-3.3.9/cmake")
 
 find_package(Eigen3 3.3 REQUIRED PATHS ../../Libraires/eigen-3.3.9/cmake) 
-#find_package(Eigen3::eigen 3.3 REQUIRED)
 
 # Set SOURCES variable
 set(SOURCES Ethereal.cpp)
